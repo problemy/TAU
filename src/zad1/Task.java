@@ -19,6 +19,11 @@ public class Task {
 		return deadline;
 	}
 	public void setDeadline(Date deadline) {
+		Date currentDate = new Date();
+		if(deadline.before(currentDate)) {
+			throw new IllegalArgumentException();
+		}
+			
 		this.deadline = deadline;
 	}
 	public String getUser() {

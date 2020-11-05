@@ -1,6 +1,7 @@
 package zad1;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 
@@ -32,9 +33,17 @@ public class ToDoListTest {
 	}
 	@Test
 	public void ToDoListTest2() {
+		
+		assertNotNull(todolist.getTasks());
+
+	}
+	@Test
+	public void ToDoListTest3() {
 		ArrayList<Task> tasks = todolist.getTasks();
 		int result = tasks.size();
 		assertEquals(1, result);
 
 	}
+	
+
 }
