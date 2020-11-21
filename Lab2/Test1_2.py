@@ -1,0 +1,56 @@
+import logging
+
+from selenium import webdriver
+logger = logging.getLogger('Test1_2logger')
+logging.basicConfig(filename="Test1_2.log",
+                    format='%(asctime)s %(message)s',
+                    filemode='w')
+logger.setLevel(logging.INFO)
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
+
+
+driver = webdriver.Firefox(executable_path=r'C:\Users\matko\PycharmProjects\pythonTests\drivers\geckodriver.exe')
+driver.maximize_window()
+
+logger.info('Wchodzę na stronę poradykomputerowe')
+driver.get("http://www.poradykomputerowe.pl/")
+logger.info('Akceptacje cookiec')
+cookies = driver.find_element_by_class_name("submit-cookie")
+cookies.click()
+logger.info('Wchodzę na stronę logowania')
+temp = driver.find_element_by_link_text("logowanie")
+temp.click()
+logger.info('Uzupełniam login')
+temp = driver.find_element_by_id("login")
+temp.click()
+temp.send_keys("mail@mail.pl")
+logger.info('Uzupełniam hasło')
+temp = driver.find_element_by_id("password")
+temp.click()
+temp.send_keys("Q1w@e3r4")
+logger.info('Wysyłam formularz logowania')
+temp = driver.find_element_by_css_selector("button.btn:nth-child(4)")
+temp.click()
+logger.info('Wybieram interesującą mnie opcję newslettera')
+temp = driver.find_element_by_css_selector(".title > label:nth-child(4) > input:nth-child(1)")
+temp.click()
+logger.info('Uzupełniam e-mail, na który ma przychodzić newsletter')
+temp = driver.find_element_by_id("exampleInputEmail22")
+temp.click()
+temp.send_keys("mail@mail.pl")
+logger.info('Akceptacje regulamin')
+temp = driver.find_element_by_class_name("newsletterReg")
+temp.click()
+logger.info('Akceptacje dodatkowe treści przychodzące na e-mail')
+temp = driver.find_element_by_class_name("newsletterZgody")
+temp.click()
+logger.info('Wysyłam formularz newslettera')
+temp = driver.find_element_by_css_selector("button.btn:nth-child(4)")
+temp.click()
+
+driver.close()
