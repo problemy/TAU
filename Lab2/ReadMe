@@ -1,0 +1,46 @@
+#Test1_1 - tworzenie konta użytkownika
+
+1. Wejdź na stronę poradykomputerowe'
+2. Akceptuj cookies
+3. Przejdź do strony rejestracji
+4. Uzupełnij adres e-mail
+5. Uzupełnij hasło
+6. Powtórz hasło
+7. Zaznacz checkbox akceptujący regulamin
+8. Kliknij button wysyłający formularz
+
+#Test1_2 - zalogowanie się oraz zapisanie się do newslettera
+
+1. Wejdź na stronę poradykomputerowe'
+2. Akceptuj cookies
+3. Przejdź do strony logowania
+4. Uzupełnij adres e-mail
+5. Uzupełnij hasło
+6. Zaznacz checkbox akceptujący regulamin
+7. Kliknij button wysyłający formularz
+8. Wybierz interesującą mnie opcję 
+9. Uzupełnij adres e-mail na który ma przychodzić newsletter
+10. Akceptuj regulamin
+11. Akceptuj dodatkowe treści przychodzące na e-mail
+12. Kliknij button wysyłający formularz
+
+#Test2_1 - zalogowanie się oraz dodanie przedmiotu do koszyka
+
+1. Wejdź na  stronę logowania simteq
+2. Uzupełnij login
+3. Uzupełnij hasło
+4. Kliknij button wysyłający formularz
+5. Przejdź na kategorię prawdziwe okazje
+6. Wybierz interesujący mnie przedmiotu ze sklepu
+7. Dodaj przedmiot do koszyka
+8. Przejdź do koszyka
+
+
+#Test2_2 - zalogowanie się oraz usunięcie produktu z koszyka
+
+1. Wejdź na  stronę logowania simteq
+2. Uzupełnij login
+3. Uzupełnij hasło
+4. Kliknij button wysyłający formularz
+5. Przejdź do koszyka
+6. Usuń przedmiot z koszyka
