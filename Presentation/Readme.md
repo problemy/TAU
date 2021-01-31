@@ -47,9 +47,9 @@ end
 ```
 Let's focus on the line:
 
-''' Ruby
+``` Ruby
 expect(Calculator.new.add(1, 2)).to eq(3)
-'''
+```
 
 In this line add method from Calculator class is passed as parameter to method expect(), 
 .to is built in Rspec matcher which compare to argument passed to eq() method.
