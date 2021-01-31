@@ -45,9 +45,22 @@ RSpec.describe Calculator do
   end
 end
 ```
+Let's focus on the line:
 
+''' Ruby
+expect(Calculator.new.add(1, 2)).to eq(3)
+'''
 
-"describe" is an RSpec keyword. It depicts the characteristics of the code enclosed in it.
+In this line add method from Calculator class is passed as parameter to method expect(), 
+.to is built in Rspec matcher which compare to argument passed to eq() method.
+
+Pseudocode for this test would look like:
+```
+expect(actual).to be(expected) # test passes if actual.equal?(expected)
+
+```
+
+ "describe" is an RSpec keyword. It depicts the characteristics of the code enclosed in it.
 
 "it" is also a Rspec keyword which is used to define an “Example”.
 
