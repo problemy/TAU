@@ -21,7 +21,7 @@ I'm using 2.7.2-devkit in this tutorial, downloaded from https://rubyinstaller.o
 
 
 ## Example 
-Simple calculator class
+Simple calculator class to test:
 
 ``` Ruby
 # in lib/calculator.rb
@@ -45,6 +45,8 @@ RSpec.describe Calculator do
   end
 end
 ```
+
+
 "describe" is an RSpec keyword. It depicts the characteristics of the code enclosed in it.
 
 "it" is also a Rspec keyword which is used to define an “Example”.
