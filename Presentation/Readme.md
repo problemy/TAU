@@ -11,12 +11,12 @@ I'm using 2.7.2-devkit in this tutorial, downloaded from https://rubyinstaller.o
 
 2. Install Rspec in Command Prompt with Ruby with command :
 ``` bash
-    gem install rspec
+gem install rspec
 ```
 3.  Init Rspec in Command Prompt with Ruby with command :
 
 ``` bash
-        rspec --init
+rspec --init
 ```
 
 
@@ -68,12 +68,13 @@ expect(actual).to be(expected) # test passes if actual.equal?(expected)
 Running tests by their file or directory names is the most familiar way to run tests with RSpec. RSpec can take a file name or directory name and run the file or the contents of the directory.
 For example to run our tutorial test:
 ``` cmd
-	 rspec spec/calculator_spec.rb
+rspec spec/calculator_spec.rb
 
 ```
 
 ## Output:
 
   ![Imgur](https://i.imgur.com/4YVAamp.png)
+
 
     
