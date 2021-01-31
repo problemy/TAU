@@ -46,6 +46,7 @@ RSpec.describe Calculator do
 end
 ```
 "describe" is an RSpec keyword. It depicts the characteristics of the code enclosed in it.
+
 "it" is also a Rspec keyword which is used to define an “Example”.
 
 ## Running test
