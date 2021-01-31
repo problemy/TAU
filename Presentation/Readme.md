@@ -50,6 +50,6 @@ end
 
 ## Running test
 
-  ![Imgur](https://imgur.com/4YVAamp)
+  ![Imgur](https://i.imgur.com/4YVAamp.png)
 
     
