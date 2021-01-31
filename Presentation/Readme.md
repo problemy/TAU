@@ -49,6 +49,14 @@ end
 "it" is also a Rspec keyword which is used to define an “Example”.
 
 ## Running test
+Running tests by their file or directory names is the most familiar way to run tests with RSpec. RSpec can take a file name or directory name and run the file or the contents of the directory.
+For example to run our tutorial test:
+``` cmd
+	 rspec spec/calculator_spec.rb
+
+```
+
+## Output:
 
   ![Imgur](https://i.imgur.com/4YVAamp.png)
 
