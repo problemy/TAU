@@ -1,6 +1,6 @@
 import requests
 import json
-#use pytest
+
 url = 'https://pokeapi.co/api/v2/pokemon'
 
 response = requests.request("GET", url)
